@@ -50,30 +50,3 @@ footer {
     list-style: none;
 }
 
-/* 
-.
-            .banner{
-                background: url('./img/stethoscope-1584223__340.jpg')no-repeat center center fixed;
-                height: 100vh;
-                background-size: cover;
-                position: relative;
-                opacity: 0.4;
-                filter: alpha(opacity=50)
-            }
-            .overlay{
-                position: absolute;
-                right: 0;
-                left: 0;
-                top: 0;
-                bottom: 0;
-            }
-            .overlay-bg{
-                background-color: rgba(0, 0, 0, 0.55);
-            }
-            .headcolor{
-                background-color: red
-            }
-            footer{
-                position: absolute;
-                bottom: 0;
-            } */
