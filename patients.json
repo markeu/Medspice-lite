@@ -1,34 +1,49 @@
 {
-    "users": [
+    "patients": [
       {
         "id": 1,
-        "first_name": "Robert",
-        "last_name": "Schwartz",
-        "email": "rob23@gmail.com"
+        "name": "Fredrick Tamunoibelema",
+        "age": "29",
+        "Address": "14, Harold wilson street Woji GRA Port-hacourt ",
+        "phone number": "07045673456",
+        "diagnosis": "Kidney complications",
+        "description": "Renal dialysis"
       },
       {
         "id": 2,
-        "first_name": "Lucy",
-        "last_name": "Ballmer",
-        "email": "lucyb56@gmail.com"
+        "name": "Fine-face depriye",
+        "age": "37",
+        "Address": "7, Ada george road port-hacourt",
+        "phone number": "07045673456",
+        "diagnosis": "2nd degree severe burn",
+        "description": "Gas explosion burns"
       },
       {
         "id": 3,
-        "first_name": "Anna",
-        "last_name": "Smith",
-        "email": "annasmith23@gmail.com"
+        "name": "Lulu okenwe",
+        "age": "45",
+        "Address": "waterlines, porthacourt",
+        "phone number": "07045673456",
+        "diagnosis": "Hypertensive",
+        "description": "unduating blood pressure levels"
       },
-      {
+      {       
         "id": 4,
-        "first_name": "Robert",
-        "last_name": "Brown",
-        "email": "bobbrown432@yahoo.com"
+        "name": "Bebe Brown",
+        "age": "23",
+        "Address": "14, Harold wilson street Woji GRA Port-hacourt",
+        "phone number": "07045673456",
+        "diagnosis": "pregnancy",
+        "description": "2nd trimester stage"
       },
       {
         "id": 5,
-        "first_name": "Roger",
-        "last_name": "Bacon",
-        "email": "rogerbacon12@yahoo.com"
+        "name": "Ogolo Jaja",
+        "age": "57",
+        "Address": "Opobo town, Rivers state",
+        "phone number": "07045673456",
+        "diagnosis": "Diabetics",
+        "description": "Insulin infusion dependent"
       }
     ]
-  } 
+  }

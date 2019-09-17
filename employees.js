@@ -1,7 +1,7 @@
 
 var faker = require('faker')
 
-function generateEmployees () {
+function generatePatients () {
   var employees = []
   for (var id = 0; id < 50; id++) {
     var firstName = faker.name.firstName()
