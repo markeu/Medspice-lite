@@ -1,0 +1,79 @@
+:root{
+    --bg-color: #706399;
+    --header-color: #1e0e51;
+    --text-color: #b1acc2;
+}
+
+.coloring{
+    background: #1e0e51;
+}
+
+a{
+    color: #b1acc2;
+}
+.navbar-brand{
+    font-size: 20px;
+    font-weight: bold;
+}
+.showcase-img{
+    margin-top: 100px;  
+    padding: 10px;
+    box-shadow: 3px 3px 50px #706399;
+    border-radius: 10px;
+}
+.showcase-img input{
+    border-radius: 5px;
+    width: 80%;  
+}
+.Adverts{
+    margin-top: 50px;
+}
+.Adverts img{
+    width: 50%;
+}
+
+footer {
+    width: 100%;
+    background: #1e0e51;
+}
+
+.foot-nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.foot-nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    list-style: none;
+}
+
+/* 
+.
+            .banner{
+                background: url('./img/stethoscope-1584223__340.jpg')no-repeat center center fixed;
+                height: 100vh;
+                background-size: cover;
+                position: relative;
+                opacity: 0.4;
+                filter: alpha(opacity=50)
+            }
+            .overlay{
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+            }
+            .overlay-bg{
+                background-color: rgba(0, 0, 0, 0.55);
+            }
+            .headcolor{
+                background-color: red
+            }
+            footer{
+                position: absolute;
+                bottom: 0;
+            } */
