@@ -105,8 +105,8 @@
                                 <td>Larry</td>
                                 <td>the Bird</td>
                                 <td>@twitter</td>
-                                <td class="text-center"><button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update" disabled>Update</button></td>
-                                <td class="text-center"><button id="deletebtn" class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove" disabled>delete</button></td>
+                                <td class="text-center"><button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update" data-toggle="modal" data-target="#exampleModal">Update</button></td>
+                                <td class="text-center"><button type="button" class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove" data-toggle="modal" data-target="#exampleModal">Delete</button></td>
                               </tr>
                             </tbody>
                           </table>
@@ -132,12 +132,12 @@
             </ul>
         </nav>
     </footer>
-<!-- modal -->
+<!-- modal for add patient -->
     <div class="modal fade" id="patients" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="btn  btn-lg btn-block text-capitalize">Add Patients</button>
+                <button type="button" class="btn  btn-lg btn-block text-capitalize">Patient's data</button>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body" id="ref">
@@ -145,38 +145,29 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="clientName">Name</label>
-                <input type="text" class="form-control" id="clientName" value = ""  placeholder="name eg: Henry Clark" required>
+                <input type="text" class="form-control" id="clientName" value = ""  required>
               </div>
               <div class="form-group col-md-6">
-                <label for="diagnosis">Diagnosis</label>
-                <input type="text" class="form-control" id="diagnosis" value = "" placeholder="Diagnosis">
+                <label for="Address">Address</label>
+                <input type="text" class="form-control" id="Address" value = "" required>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="clientLocation">Location</label>
-              <input type="text" class="form-control" id="clientLocation"  value = "" placeholder="London">
             </div>
             <div class="form-row">
               <div class="form-group col-md-2">
-                <label for="clientAge">Age</label>
-                <input type="text" class="form-control" value = "" id="clientAge">
+                <label for="Phone-Number">Phone-Number</label>
+                <input type="text" class="form-control" value = "" id="Phone-Number" required>
               </div>
               <div class="form-group col-md-6">
-                <label for="clientAge">Date</label>
-                  <input class="form-control" type="text"  value = "" placeholder="12/4/2019" id="clientDate">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="clientCost">Medical Fee (₦)</label>
-                <input type="text" class="form-control" value = ""  id="clientCost" required>
+                <label for="clientDateOfBirth">Date of Birth</label>
+                  <input class="form-control" type="text"  value = ""  id="clientDateOfBirth" required>
               </div>
             </div>
             <div class="form-group">
-              <label for="clientDescription">Describe Symtoms and condition</label>
+              <label for="clientDescription">Describe Symptoms and Condition</label>
               <textarea class="form-control" value="" id="clientDescription" rows="3"></textarea>
             </div>
-            <button type="button" id="modalbtn" class="btn btn-primary" value="">Add Patient</button>
+            <button type="button" id="modalbtn" class="btn btn-primary" value="">Submit</button>
           </form>
-    
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -185,25 +176,25 @@
                 </div>
             </div>
             <!----modaldelete-->
-            <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalCenterTitle">Confirm Deletion</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Confirm you want to delete this Patient's data
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" id="confirmDltBtn" class="btn btn-success">Confirm</button>
-                      <button type="button" class="btn btn-danger text-lg-left" data-dismiss="modal">Cancel</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirm Delete</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          Do you want to delete this Patient's data
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" class="btn btn-success">Confirm</button>
+                        <button type="button" class="btn btn-danger text-lg-left" data-dismiss="modal">Cancel</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
               <!--- modal data-->
                 <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -223,7 +214,7 @@
                       </div>
                     </div>
                 </div>
-        <!---- update modal-->
+        
     <script src="script/jquery-3.4.1.min.js"></script>
     <script src="script/popper.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
