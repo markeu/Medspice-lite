@@ -29,12 +29,8 @@ eventListeners();
 
 function eventListeners(){
     const addbutton = document.querySelector('.modalbtn');
-    addbutton.addEventListener('click', addPatients);
-    
+    addbutton.addEventListener('click', addPatients);   
     window.addEventListener('DOMContentLoaded', dataDisplay);
-  
-    const  deleteBtn = document.querySelector('tbody');
-    deleteBtn.addEventListener('click', deletePatient);
 }
 
 function addPatients(element){
@@ -83,44 +79,24 @@ function dataDisplay(){
     <td>${patient.PhoneNumber}</td>
     <td>${patient.diagnosisDescription}</td>
     <td class="text-center"><button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg" data=${data.indexOf(patient)}>Update</button></td>
-    <td class="text-center"><button  class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg tableWist type="button" data-target="#deleteModal" data-toggle="modal">Delete</button></td>
+    <td class="text-center"><button  class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg tableWist type="button" data-target="#deleteModal" data-toggle="modal" onclick="deletePatient(${patient.id})">Delete</button></td>
     </tr>
    `
    });
   });
 }
 
-function deletePatient(element){
-  if(element.target){
-    let id = element.target.parentElement.dataset.id;
-    console.log(id)
-      fetch(`http://localhost:3000/patients/${id}`,{
-        method: 'DELETE',
-        headers: 'application/json'
-
-      }).then((res) => res.json())
-      .then((data) => console.log(data))
-      .catch(err => {
-        console.log(err)
-      })
-    }
-  }
-  // element.preventDefault();
-  // let deleteBtnn = document.querySelector('.deleteBtn');
-  // console.log(deleteBtnn)
-  // deleteBtnn.addEventListener('click', e => {
-  //   if(e.target.classList.contains('remove')){
-  //     let id = e.target.parentElement.parentElement.Id;
-  //     console.log(id)
-  //     let url = 'http://localhost:3000/patients/'
-  //     fetch(url+id,{
-  //       method: 'DELETE'
-  //     }).then(() => {
-  //       console.log('Succesfully Deleted')
-  //     }).catch(err => {
-  //       console.log('err')
-  //     })
-  //   }
-  // })
-
-
+function deletePatient(id){
+  if(id){
+    let url = `http://localhost:3000/patients/${id}`;
+  fetch(url,  {
+    method: 'DELETE',
+    headers:{
+      'Accept': 'application/json',
+    }, 
+  })
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.log(err))
+  } 
+}

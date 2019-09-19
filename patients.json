@@ -1,49 +1,12 @@
 {
   "patients": [
     {
-      "id": 1,
-      "name": "Fredrick Tamunoibelema",
-      "age": "29",
-      "Address": "14, Harold wilson street Woji GRA Port-hacourt ",
-      "phone number": "07045673456",
-      "diagnosis": "Kidney complications",
-      "description": "Renal dialysis"
-    },
-    {
-      "id": 2,
-      "name": "Fine-face depriye",
-      "age": "37",
-      "Address": "7, Ada george road port-hacourt",
-      "phone number": "07045673456",
-      "diagnosis": "2nd degree severe burn",
-      "description": "Gas explosion burns"
-    },
-    {
-      "id": 3,
-      "name": "Lulu okenwe",
-      "age": "45",
-      "Address": "waterlines, porthacourt",
-      "phone number": "07045673456",
-      "diagnosis": "Hypertensive",
-      "description": "unduating blood pressure levels"
-    },
-    {
       "id": 4,
       "name": "Bebe Brown",
       "age": "23",
       "Address": "14, Harold wilson street Woji GRA Port-hacourt",
       "phone number": "07045673456",
-      "diagnosis": "pregnancy",
-      "description": "2nd trimester stage"
-    },
-    {
-      "id": 5,
-      "name": "Ogolo Jaja",
-      "age": "57",
-      "Address": "Opobo town, Rivers state",
-      "phone number": "07045673456",
-      "diagnosis": "Diabetics",
-      "description": "Insulin infusion dependent"
+      "diagnosisDescription": "2nd trimester stage"
     },
     {
       "name": "Philip Ben",
