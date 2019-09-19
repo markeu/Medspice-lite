@@ -1,49 +1,161 @@
 {
-    "patients": [
-      {
-        "id": 1,
-        "name": "Fredrick Tamunoibelema",
-        "age": "29",
-        "Address": "14, Harold wilson street Woji GRA Port-hacourt ",
-        "phone number": "07045673456",
-        "diagnosis": "Kidney complications",
-        "description": "Renal dialysis"
-      },
-      {
-        "id": 2,
-        "name": "Fine-face depriye",
-        "age": "37",
-        "Address": "7, Ada george road port-hacourt",
-        "phone number": "07045673456",
-        "diagnosis": "2nd degree severe burn",
-        "description": "Gas explosion burns"
-      },
-      {
-        "id": 3,
-        "name": "Lulu okenwe",
-        "age": "45",
-        "Address": "waterlines, porthacourt",
-        "phone number": "07045673456",
-        "diagnosis": "Hypertensive",
-        "description": "unduating blood pressure levels"
-      },
-      {       
-        "id": 4,
-        "name": "Bebe Brown",
-        "age": "23",
-        "Address": "14, Harold wilson street Woji GRA Port-hacourt",
-        "phone number": "07045673456",
-        "diagnosis": "pregnancy",
-        "description": "2nd trimester stage"
-      },
-      {
-        "id": 5,
-        "name": "Ogolo Jaja",
-        "age": "57",
-        "Address": "Opobo town, Rivers state",
-        "phone number": "07045673456",
-        "diagnosis": "Diabetics",
-        "description": "Insulin infusion dependent"
-      }
-    ]
-  }
+  "patients": [
+    {
+      "id": 1,
+      "name": "Fredrick Tamunoibelema",
+      "age": "29",
+      "Address": "14, Harold wilson street Woji GRA Port-hacourt ",
+      "phone number": "07045673456",
+      "diagnosis": "Kidney complications",
+      "description": "Renal dialysis"
+    },
+    {
+      "id": 2,
+      "name": "Fine-face depriye",
+      "age": "37",
+      "Address": "7, Ada george road port-hacourt",
+      "phone number": "07045673456",
+      "diagnosis": "2nd degree severe burn",
+      "description": "Gas explosion burns"
+    },
+    {
+      "id": 3,
+      "name": "Lulu okenwe",
+      "age": "45",
+      "Address": "waterlines, porthacourt",
+      "phone number": "07045673456",
+      "diagnosis": "Hypertensive",
+      "description": "unduating blood pressure levels"
+    },
+    {
+      "id": 4,
+      "name": "Bebe Brown",
+      "age": "23",
+      "Address": "14, Harold wilson street Woji GRA Port-hacourt",
+      "phone number": "07045673456",
+      "diagnosis": "pregnancy",
+      "description": "2nd trimester stage"
+    },
+    {
+      "id": 5,
+      "name": "Ogolo Jaja",
+      "age": "57",
+      "Address": "Opobo town, Rivers state",
+      "phone number": "07045673456",
+      "diagnosis": "Diabetics",
+      "description": "Insulin infusion dependent"
+    },
+    {
+      "name": "name",
+      "address": "address",
+      "age": "age",
+      "PhoneNumber": "PhoneNumber",
+      "diagnosisDescription": "diagnosisDescription",
+      "id": 6
+    },
+    {
+      "name": "name",
+      "address": "address",
+      "age": "age",
+      "PhoneNumber": "PhoneNumber",
+      "diagnosisDescription": "diagnosisDescription",
+      "id": 7
+    },
+    {
+      "name": "",
+      "address": "",
+      "age": "",
+      "PhoneNumber": "",
+      "diagnosisDescription": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "address": "",
+      "age": "",
+      "PhoneNumber": "",
+      "diagnosisDescription": "",
+      "id": 9
+    },
+    {
+      "name": "uche",
+      "address": "jjkkdk",
+      "age": "",
+      "PhoneNumber": "",
+      "diagnosisDescription": "",
+      "id": 10
+    },
+    {
+      "name": "uche",
+      "address": "jjkkdk",
+      "age": "34",
+      "PhoneNumber": "",
+      "diagnosisDescription": "",
+      "id": 11
+    },
+    {
+      "name": "uche",
+      "address": "234",
+      "age": "56",
+      "PhoneNumber": "gdhdd",
+      "diagnosisDescription": "dhdhhdjd",
+      "id": 12
+    },
+    {
+      "name": "uche",
+      "address": "hdhhdh",
+      "age": "340039",
+      "PhoneNumber": "93993993",
+      "diagnosisDescription": "jdjjdjjd",
+      "id": 13
+    },
+    {
+      "name": "Uche Mark",
+      "address": "Adenekan street",
+      "age": "25",
+      "PhoneNumber": "08122037887",
+      "diagnosisDescription": "hypertensive",
+      "id": 14
+    },
+    {
+      "name": "Uche Mark",
+      "address": "Adenekan street Lagos",
+      "age": "25",
+      "PhoneNumber": "08123567799",
+      "diagnosisDescription": "Healthy",
+      "id": 15
+    },
+    {
+      "name": "Uche Mark",
+      "address": "Adenekan street Lagos",
+      "age": "25",
+      "PhoneNumber": "08123567799",
+      "diagnosisDescription": "Hypertension",
+      "id": 16
+    },
+    {
+      "name": "Uche Mark",
+      "address": "Adenekan street Lagos",
+      "age": "25",
+      "PhoneNumber": "08123567799",
+      "diagnosisDescription": "Hypertension",
+      "id": 17
+    },
+    {
+      "name": "Hilarry ojukwu",
+      "address": "Enugu",
+      "age": "45",
+      "PhoneNumber": "08078345612",
+      "diagnosisDescription": "Diabetics",
+      "id": 18
+    },
+    {
+      "name": "Nelson weis",
+      "address": "MaryLand",
+      "age": "12",
+      "PhoneNumber": "092939940",
+      "diagnosisDescription": "Gaundice",
+      "id": 19
+    }
+  ]
+}
