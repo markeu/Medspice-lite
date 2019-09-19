@@ -31,7 +31,7 @@ function eventListeners(){
     const addbutton = document.querySelector('.modalbtn');
     addbutton.addEventListener('click', addPatients);
 
-    window.addEventListener('DOMContentLoaded', displayData);
+    window.addEventListener('DOMContentLoaded', dataDisplay);
   
 }
 
@@ -76,15 +76,14 @@ function dataDisplay(){
   .then(function(data) {
     data.forEach(patient => {
     document.querySelector('.append').innerHTML +=
-    `<tr id="${patient.id}">
+    `<tr Id="${patient.Id}">
     <td><a class="clientName" data-toggle="modal" data-target="#dataModal" href="#">${patient.name}</a></td>
-    <td>${patient.name}</td>
     <td>${patient.address}</td>
     <td>${patient.age}</td>
     <td>${patient.PhoneNumber}</td>
     <td>${patient.diagnosisDescription}</td>
-    <td class="text-center"><button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update" disabled>Update</button></td>
-    <td class="text-center"><button id="deletebtn" class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove" disabled>delete</button></td>
+    <td class="text-center"><button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg">Update</button></td>
+    <td class="text-center"><button id="deletebtn" class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg" >delete</button></td>
     </tr>
    `
    });

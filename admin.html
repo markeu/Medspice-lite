@@ -15,12 +15,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active "><a class="nav-link" href="#showcase">Dashboard</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Patients</a></li>
-          </ul>
-          <ul class="navbar-nav navbar-right">
-            <li class="nav-item"><a class="nav-link" href="#showcase">Welcome, Dr. Uchay</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+              <li class="nav-item"><a class="nav-link" href="#showcase">Welcome, Dr. Uchay Mark</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Patients</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
           </ul>
         </div>
     </nav>
@@ -43,7 +40,7 @@
     <section id="breadcrumb">
       <div class="container">
         <div class="breadcrumb">
-          <li class="active">dashboard</li>
+          <li class="active"></li>
         </div>
       </div>
     </section>
@@ -58,7 +55,7 @@
                   <a href="pages.html" class="list-group-item list-group-item-action"><i class="fas fa-stethoscope"></i> Home-care <span class="badge">19</span></a>
                   <a href="users.html" class="list-group-item list-group-item-action"><i class="fas fa-procedures"></i> Emergencies   <span class="badge">37</span></a>
                   <a href="posts.tml" class="list-group-item list-group-item-action"><i class="fas fa-users"></i> Patients <span class="badge">132</span></a>
-                </div>
+              </div>
           </div>
           <div class="col-md-6"> 
                 <div class="card">
@@ -121,14 +118,13 @@
                                 <td class="text-center"><button id="deletebtn" class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg" disabled>delete</button></td>
                               </tr>
                             </tbody>
-                          </table>
+                        </table>
                     </div>
-                  </div>
+                </div>
+              </div>
           </div>
-        </div>
       </div>
     </section>  
-
     <footer>
         <nav class="container foot-nav">
             <ul>
@@ -144,44 +140,48 @@
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="btn  btn-lg btn-block text-capitalize">Patient's data</button>
+              <button type="button" class="btn  btn-lg btn-block text-capitalize">Patient's data</button>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body" id="ref">
-            <form id="form-selector" class="patient-form">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="clientName">Name</label>
-                <input type="text" class="form-control" id="client-name" required>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="Address">Address</label>
-                <input type="text" class="form-control" id="address" required>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-2">
-                <label for="clientAge">Age</label>
-                <input type="text" class="form-control"  id="client-age" required>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="Phone-Number">Phone-Number</label>
-                  <input class="form-control" type="text"    id="phone-number" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="diagnosisDescription">Diagnosis Result</label>
-              <textarea class="form-control" id="diagnosis-description" rows="3"></textarea>
-            </div>
-            <button type="button" id="modalbtn" class="btn btn-primary modalbtn" value="">Submit</button>
-          </form>
+              <form id="form-selector" class="patient-form">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="clientName">Name</label>
+                    <input type="text" class="form-control" id="client-name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="Address">Address</label>
+                    <input type="text" class="form-control" id="address" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-2">
+                      <label for="clientAge">Age</label>
+                      <input type="text" class="form-control"  id="client-age" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                     <label for="Phone-Number">Phone-Number</label>
+                     <input class="form-control" type="text"    id="phone-number" required>
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="Id">Id</label>
+                      <input class="form-control" type="text"id="Id" required>
+                   </div>
+                </div>
+                <div class="form-group">
+                  <label for="diagnosisDescription">Diagnosis Result</label>
+                  <textarea class="form-control" id="diagnosis-description" rows="3"></textarea>
+                </div>
+                <button type="button" id="modalbtn" class="btn btn-primary modalbtn" value="">Submit</button>
+              </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
-            </div>
-            </div>
-            </div>
+          </div>
+        </div>
+    </div>
             <!----modaldelete-->
               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -192,16 +192,14 @@
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
-                      <div class="modal-body">
-                          Do you want to delete this Patient's data
-                      </div>
-                      <div class="modal-footer">
+                    <div class="modal-body">Do you want to delete this Patient's data</div>
+                    <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" class="btn btn-success">Confirm</button>
                         <button type="button" class="btn btn-danger text-lg-left" data-dismiss="modal">Cancel</button>
-                      </div>
+                    </div>
                     </div>
                   </div>
-                </div>
+              </div>
               <!--- modal data-->
                 <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">

@@ -156,6 +156,54 @@
       "PhoneNumber": "092939940",
       "diagnosisDescription": "Gaundice",
       "id": 19
+    },
+    {
+      "name": "uche",
+      "address": "12 adenekan",
+      "age": "34",
+      "PhoneNumber": "09023456789",
+      "diagnosisDescription": "Gallant",
+      "id": 20
+    },
+    {
+      "name": "uche",
+      "address": "12 adenekan",
+      "age": "34",
+      "PhoneNumber": "09023456789",
+      "diagnosisDescription": "Gallant",
+      "id": 21
+    },
+    {
+      "name": "",
+      "address": "",
+      "age": "",
+      "PhoneNumber": "",
+      "diagnosisDescription": "",
+      "id": 22
+    },
+    {
+      "name": "",
+      "address": "",
+      "age": "",
+      "PhoneNumber": "",
+      "diagnosisDescription": "",
+      "id": 23
+    },
+    {
+      "name": "Fredick",
+      "address": "Jaja",
+      "age": "23",
+      "PhoneNumber": "0930003",
+      "diagnosisDescription": "Burns",
+      "id": 24
+    },
+    {
+      "name": "Frank Edeke",
+      "address": "WARRI",
+      "age": "23",
+      "PhoneNumber": "0900200303",
+      "diagnosisDescription": "fAT LEGS",
+      "id": 25
     }
   ]
 }
