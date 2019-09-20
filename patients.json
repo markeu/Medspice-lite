@@ -1,14 +1,6 @@
 {
   "patients": [
     {
-      "name": "Philip Ben",
-      "address": "12 adenekan",
-      "age": "29",
-      "PhoneNumber": "+235-765-12",
-      "diagnosisDescription": "Hypertenive",
-      "id": 6
-    },
-    {
       "name": "Obasi Kelechi",
       "address": "12 babariga road lagos.",
       "age": "25",

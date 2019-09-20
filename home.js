@@ -114,9 +114,7 @@ function displayPatient(id){
   let url = `http://localhost:3000/patients/${id}`
   fetch(url)
   .then(res => res.json())
-  .then(patient=> {
-    console.log(patient)
-    
+  .then(patient=> {    
     document.querySelector('.disModal').innerHTML =
     `<div class="display-data">
       <div>
@@ -139,87 +137,17 @@ function displayPatient(id){
 }
 
 function updatePatient(e, id){
-  // e.preventDefault();
-  if(id){
-    console.log(id)
-    let url = `http://localhost:3000/patients/${id}`
-    let insertPage = document.querySelector('#updateModal');
-    fetch(url)
-    .then(res => {
-      return res.json();
-    }).then( file => {
-      insertPage.innerHTML=`
-    <div class="modal fade" id="updatedModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="btn  btn-lg btn-block text-capitalize">Edit Patient</button>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body" id="ref">
-        <form id="form-selector">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="clientName">Name</label>
-            <input type="text" class="form-control" id="clientName2" value = "${file.name}"  placeholder="name>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="address">Address</label>
-            <input type="text" class="form-control" id="address2" value = "${file.address}" placeholder="address">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="clientAge">Age</label>
-          <input type="text" class="form-control" id="clientAge2"  value = "${file.age}" placeholder="Age">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-2">
-            <label for="clientPhoneNumber">PhoneNumber</label>
-            <input type="text" class="form-control" value = "${file.PhoneNumber}" id="clientPhoneNumber2">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="diagnosisDescription">diagnosisDescription</label>
-              <input class="form-control" type="text"  value = "${file.diagnosisDescription}"  id="diagnosisDescription2">
-          </div>
-          
-        <button type="button" id="updateBtn" class="btn btn-primary">Update Patient Data</button>
-      </form>
-  
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-            </div>
-        </div>
-    `;
-  
-    let updateButton = document.querySelector('#updateBtn');
-    updateButton.addEventListener('click', e => {
-     document.querySelector('#form-selector').remove();
-
-     let name = document.querySelector('#client-name').value;
-     let address = document.querySelector('#address').value;
-     let age = document.querySelector("#client-age").value;
-     let PhoneNumber = document.querySelector("#phone-number").value;
-     let diagnosisDescription = document.querySelector('#diagnosis-description').value;
- 
-     let data = {
-     name: name,
-     address: address,
-     age: age,
-     PhoneNumber: PhoneNumber,
-     diagnosisDescription: diagnosisDescription,
-    };
-    fetch(url, {
-      method: 'PATCH',
-      body: JSON.stringify(data),
-      headers:{
-        'Content-Type': 'application/json'
-      }
-    }).then(res => res.json())
-    .then(ui.displayMessage("patient succesfully added", "success"));
-        });
-    });
-  };
-};
+  e.preventDefault();
+  let url = `http://localhost:3000/patients/${id}`
+  fetch(url, {
+    method: 'PUT',
+    headers:{
+      'Accept': 'application/json, text/plain, */*',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data),
+      })
+      .then(res => res.json())
+      .then(ui.displayMessage("Patient Added Succesfully", "success"));
+      element.preventDefault();
+ }       
