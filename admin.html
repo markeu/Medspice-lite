@@ -86,19 +86,18 @@
                                 <th scope="col">Age (years)</th>
                                 <th scope="col">Address</th>
                                 <th scope="col">Phone-number</th>
-                                <th scope="col">Diagnosis</th>
+                                <th scope="col">Diagnosis-description</th>
                               </tr>
                             </thead>
                             <tbody class="append">
                               <tr>
-                                <th scope="row">1</th>
-                                <td>Tamunoibelema Fibresima</td>
-                                <td>67</td>
-                                <td>12, Adenikan street Lagos</td>
-                                <td>08122937823</td>
-                                <td>Tuberclosis</td>
-                                <td class="text-center"><button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg" disabled>Update</button></td>
-                                <td class="text-center"><button id="deletebtn" class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg" disabled type="button" data-target="#deleteModal" data-toggle="modal">delete</button></td>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                
                               </tr>
                             </tbody>
                         </table>
@@ -120,6 +119,7 @@
     </footer>
 
     <div id="updateModal"></div>
+    
 <!-- modal for add patient -->
     <div class="modal fade" id="patients" role="dialog">
         <div class="modal-dialog modal-lg">
@@ -149,13 +149,9 @@
                      <label for="Phone-Number">Phone-Number</label>
                      <input class="form-control" type="text"    id="phone-number" required>
                   </div>
-                  <div class="form-group col-md-2">
-                      <label for="Id">Id</label>
-                      <input class="form-control" type="text"id="Id" required>
-                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="diagnosisDescription">Diagnosis Result</label>
+                  <label for="diagnosisDescription">Diagnosis-description</label>
                   <textarea class="form-control" id="diagnosis-description" rows="3"></textarea>
                 </div>
                 <button type="button" id="modalbtn" class="btn btn-primary modalbtn" value="">Submit</button>
@@ -185,7 +181,7 @@
                   </div>
               </div>
               <!--- modal data-->
-                <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal fade displayModal" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -194,7 +190,7 @@
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
-                        <div class="modal-body" id="single-data">
+                        <div class="disModal" id="single-data">
                             
                         </div>
                         <div class="modal-footer">

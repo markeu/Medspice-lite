@@ -82,12 +82,12 @@ function dataDisplay(){
     data.forEach(patient => {
     document.querySelector('.append').innerHTML +=
     `<th scope="row">${parseInt(data.indexOf(patient) + 1)}</th>
-    <td><a class="clientName" data-toggle="modal" data-target="#dataModal" href="#">${patient.name}</a></td>
+    <td><a class="clientName" data-toggle="modal" data-target="#dataModal" href="#" onclick="displayPatient(${patient.id})">${patient.name}</a></td>
     <td>${patient.address}</td>
     <td>${patient.age}</td>
     <td>${patient.PhoneNumber}</td>
     <td>${patient.diagnosisDescription}</td>
-    <td class="text-center"><button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg" onclick="updatePatient(${patient.id}")>Update</button></td>
+    <td class="text-center"><button id="" class="d-none d-sm-inline btn btn-sm btn-warning shadow-sm update main-color-bg" onclick="updatePatient(${patient.id})">Update</button></td>
     <td class="text-center"><button  class="d-none d-sm-inline btn btn-sm btn-danger shadow-sm remove main-color-bg tableWist type="button" data-target="#deleteModal" data-toggle="modal" onclick="deletePatient(${patient.id})">Delete</button></td>
     </tr>
    `
@@ -110,17 +110,46 @@ function deletePatient(id){
   } 
 }
 
+function displayPatient(id){
+  let url = `http://localhost:3000/patients/${id}`
+  fetch(url)
+  .then(res => res.json())
+  .then(patient=> {
+    console.log(patient)
+    
+    document.querySelector('.disModal').innerHTML =
+    `<div class="display-data">
+      <div>
+        <span class="data-key">Name:</span> <span>${patient.name}</span>
+      </div>
+      <div>
+        <span class="data-key">Address:</span> <span>${patient.address}</span>
+      </div>
+      <div>
+        <span class="data-key">Age:</span> <span>${patient.age}</span>
+      </div>
+      <div>
+        <span class="data-key">Phone-number:</span> <span>${patient.PhoneNumber}</span>
+      </div>
+      <div>
+        <span class="data-key">Diagnosis-description:</span> <span>${patient.diagnosisDescription}</span>
+      </div>
+    </div>`
+  });
+}
+
 function updatePatient(e, id){
-  e.preventDefault();
+  // e.preventDefault();
   if(id){
+    console.log(id)
     let url = `http://localhost:3000/patients/${id}`
-    let insertPage = document.querySelector('#putModal');
+    let insertPage = document.querySelector('#updateModal');
     fetch(url)
     .then(res => {
       return res.json();
     }).then( file => {
       insertPage.innerHTML=`
-    <div class="modal fade" id="updateModal" role="dialog">
+    <div class="modal fade" id="updatedModal" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -150,7 +179,7 @@ function updatePatient(e, id){
           </div>
           <div class="form-group col-md-6">
             <label for="diagnosisDescription">diagnosisDescription</label>
-              <input class="form-control" type="text"  value = "${patient.diagnosisDescription}"  id="diagnosisDescription2">
+              <input class="form-control" type="text"  value = "${file.diagnosisDescription}"  id="diagnosisDescription2">
           </div>
           
         <button type="button" id="updateBtn" class="btn btn-primary">Update Patient Data</button>

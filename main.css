@@ -7,7 +7,12 @@
 .coloring{
     background: #1e0e51;
 }
-
+.display-data{
+    padding: 15px;
+}
+.data-key{
+    font-weight: 700;
+}
 a{
     color: #b1acc2;
 }
