@@ -1,20 +1,36 @@
 {
   "patients": [
     {
-      "id": 4,
-      "name": "Bebe Brown",
-      "age": "23",
-      "Address": "14, Harold wilson street Woji GRA Port-hacourt",
-      "phone number": "07045673456",
-      "diagnosisDescription": "2nd trimester stage"
-    },
-    {
       "name": "Philip Ben",
       "address": "12 adenekan",
       "age": "29",
       "PhoneNumber": "+235-765-12",
       "diagnosisDescription": "Hypertenive",
       "id": 6
+    },
+    {
+      "name": "Obasi Kelechi",
+      "address": "12 babariga road lagos.",
+      "age": "25",
+      "PhoneNumber": "08289342310",
+      "diagnosisDescription": "Living with a cardiac discordance.",
+      "id": 7
+    },
+    {
+      "name": "John Doe",
+      "address": "12 adewumi",
+      "age": "23",
+      "PhoneNumber": "08122937888",
+      "diagnosisDescription": "Gastric congestion",
+      "id": 11
+    },
+    {
+      "name": "Ageyu",
+      "address": "aleya",
+      "age": "23",
+      "PhoneNumber": "09078654323",
+      "diagnosisDescription": "Sore throat",
+      "id": 12
     }
   ]
 }

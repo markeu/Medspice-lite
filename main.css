@@ -36,6 +36,12 @@ footer {
     width: 100%;
     background: #1e0e51;
 }
+#myInput{
+    width: 40%; 
+    /* font-size: 16px; 
+    border-radius: 20%;
+    float: right; */  
+}
 
 .foot-nav {
     display: flex;
